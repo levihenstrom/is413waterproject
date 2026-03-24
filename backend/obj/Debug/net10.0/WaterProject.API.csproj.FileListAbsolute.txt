@@ -63,3 +63,4 @@
 /Users/levihenstrom/Desktop/BYU/IS Core/Winter 2025/IS 413 - Development/Water Project/backend/obj/Debug/net10.0/WaterProject.API.pdb
 /Users/levihenstrom/Desktop/BYU/IS Core/Winter 2025/IS 413 - Development/Water Project/backend/obj/Debug/net10.0/WaterProject.API.genruntimeconfig.cache
 /Users/levihenstrom/Desktop/BYU/IS Core/Winter 2025/IS 413 - Development/Water Project/backend/obj/Debug/net10.0/ref/WaterProject.API.dll
+/Users/levihenstrom/Desktop/BYU/IS Core/Winter 2025/IS 413 - Development/Water Project/backend/obj/Debug/net10.0/WaterProject.API.sourcelink.json

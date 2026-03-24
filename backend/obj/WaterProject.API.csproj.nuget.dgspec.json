@@ -10,7 +10,7 @@
         "projectUniqueName": "/Users/levihenstrom/Desktop/BYU/IS Core/Winter 2025/IS 413 - Development/Water Project/backend/WaterProject.API.csproj",
         "projectName": "WaterProject.API",
         "projectPath": "/Users/levihenstrom/Desktop/BYU/IS Core/Winter 2025/IS 413 - Development/Water Project/backend/WaterProject.API.csproj",
-        "packagesPath": "/var/folders/5l/lhnp8gz53rg6yv82zzmlg4yr0000gn/T/cursor-sandbox-cache/3b4cfdc42b0b2ff5c1d9008ec62df4fd/nuget",
+        "packagesPath": "/Users/levihenstrom/.nuget/packages/",
         "outputPath": "/Users/levihenstrom/Desktop/BYU/IS Core/Winter 2025/IS 413 - Development/Water Project/backend/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [

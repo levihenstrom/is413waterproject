@@ -1,0 +1,35 @@
+bin/
+obj/
+
+.vs/
+
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Rider / VS Code
+.idea/
+.vscode/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+
+# Test / coverage
+TestResults/
+*.coverage
+*.coveragexml
+coverage/
+
+# Logs
+*.log
+
+# Local settings / environment overrides
+appsettings.Local.json
+appsettings.*.local.json
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -4,15 +4,15 @@
     <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
-    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/var/folders/5l/lhnp8gz53rg6yv82zzmlg4yr0000gn/T/cursor-sandbox-cache/3b4cfdc42b0b2ff5c1d9008ec62df4fd/nuget</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/var/folders/5l/lhnp8gz53rg6yv82zzmlg4yr0000gn/T/cursor-sandbox-cache/3b4cfdc42b0b2ff5c1d9008ec62df4fd/nuget</NuGetPackageFolders>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/levihenstrom/.nuget/packages/</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/levihenstrom/.nuget/packages/</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">7.0.0</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <SourceRoot Include="/var/folders/5l/lhnp8gz53rg6yv82zzmlg4yr0000gn/T/cursor-sandbox-cache/3b4cfdc42b0b2ff5c1d9008ec62df4fd/nuget/" />
+    <SourceRoot Include="/Users/levihenstrom/.nuget/packages/" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)/microsoft.entityframeworkcore/10.0.5/buildTransitive/net10.0/Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)/microsoft.entityframeworkcore/10.0.5/buildTransitive/net10.0/Microsoft.EntityFrameworkCore.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore/10.0.5/buildTransitive/net10.0/Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore/10.0.5/buildTransitive/net10.0/Microsoft.EntityFrameworkCore.props')" />
   </ImportGroup>
 </Project>

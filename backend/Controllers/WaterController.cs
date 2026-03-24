@@ -30,14 +30,15 @@ public class WaterController(WaterDbContext context) : ControllerBase
         });
     }
 
-    [HttpGet("functionalprojects")]
-    public IActionResult GetFunctionalProjects()
+    [HttpGet("GetProjectsTypes")]
+    public IActionResult GetProjectsTypes()
     {
-        var projects = context.Projects
-            .Where(p => p.ProjectFunctionalityStatus == "Functional")
-            .OrderBy(p => p.ProjectId)
+        var projectTypes = context.Projects
+            .Select(p => p.ProjectType)
+            .Distinct()
             .ToList();
 
-        return Ok(projects);
+        return Ok(projectTypes);
+
     }
 }

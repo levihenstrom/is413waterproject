@@ -1,23 +1,23 @@
 {
   "version": 2,
-  "dgSpecHash": "O8g/2a2NIuE=",
+  "dgSpecHash": "a7YHBpLmyWk=",
   "success": true,
   "projectFilePath": "/Users/levihenstrom/Desktop/BYU/IS Core/Winter 2025/IS 413 - Development/Water Project/backend/WaterProject.API.csproj",
   "expectedPackageFiles": [
-    "/var/folders/5l/lhnp8gz53rg6yv82zzmlg4yr0000gn/T/cursor-sandbox-cache/3b4cfdc42b0b2ff5c1d9008ec62df4fd/nuget/microsoft.aspnetcore.openapi/10.0.1/microsoft.aspnetcore.openapi.10.0.1.nupkg.sha512",
-    "/var/folders/5l/lhnp8gz53rg6yv82zzmlg4yr0000gn/T/cursor-sandbox-cache/3b4cfdc42b0b2ff5c1d9008ec62df4fd/nuget/microsoft.data.sqlite.core/10.0.5/microsoft.data.sqlite.core.10.0.5.nupkg.sha512",
-    "/var/folders/5l/lhnp8gz53rg6yv82zzmlg4yr0000gn/T/cursor-sandbox-cache/3b4cfdc42b0b2ff5c1d9008ec62df4fd/nuget/microsoft.entityframeworkcore/10.0.5/microsoft.entityframeworkcore.10.0.5.nupkg.sha512",
-    "/var/folders/5l/lhnp8gz53rg6yv82zzmlg4yr0000gn/T/cursor-sandbox-cache/3b4cfdc42b0b2ff5c1d9008ec62df4fd/nuget/microsoft.entityframeworkcore.abstractions/10.0.5/microsoft.entityframeworkcore.abstractions.10.0.5.nupkg.sha512",
-    "/var/folders/5l/lhnp8gz53rg6yv82zzmlg4yr0000gn/T/cursor-sandbox-cache/3b4cfdc42b0b2ff5c1d9008ec62df4fd/nuget/microsoft.entityframeworkcore.analyzers/10.0.5/microsoft.entityframeworkcore.analyzers.10.0.5.nupkg.sha512",
-    "/var/folders/5l/lhnp8gz53rg6yv82zzmlg4yr0000gn/T/cursor-sandbox-cache/3b4cfdc42b0b2ff5c1d9008ec62df4fd/nuget/microsoft.entityframeworkcore.relational/10.0.5/microsoft.entityframeworkcore.relational.10.0.5.nupkg.sha512",
-    "/var/folders/5l/lhnp8gz53rg6yv82zzmlg4yr0000gn/T/cursor-sandbox-cache/3b4cfdc42b0b2ff5c1d9008ec62df4fd/nuget/microsoft.entityframeworkcore.sqlite/10.0.5/microsoft.entityframeworkcore.sqlite.10.0.5.nupkg.sha512",
-    "/var/folders/5l/lhnp8gz53rg6yv82zzmlg4yr0000gn/T/cursor-sandbox-cache/3b4cfdc42b0b2ff5c1d9008ec62df4fd/nuget/microsoft.entityframeworkcore.sqlite.core/10.0.5/microsoft.entityframeworkcore.sqlite.core.10.0.5.nupkg.sha512",
-    "/var/folders/5l/lhnp8gz53rg6yv82zzmlg4yr0000gn/T/cursor-sandbox-cache/3b4cfdc42b0b2ff5c1d9008ec62df4fd/nuget/microsoft.extensions.dependencymodel/10.0.5/microsoft.extensions.dependencymodel.10.0.5.nupkg.sha512",
-    "/var/folders/5l/lhnp8gz53rg6yv82zzmlg4yr0000gn/T/cursor-sandbox-cache/3b4cfdc42b0b2ff5c1d9008ec62df4fd/nuget/microsoft.openapi/2.0.0/microsoft.openapi.2.0.0.nupkg.sha512",
-    "/var/folders/5l/lhnp8gz53rg6yv82zzmlg4yr0000gn/T/cursor-sandbox-cache/3b4cfdc42b0b2ff5c1d9008ec62df4fd/nuget/sqlitepclraw.bundle_e_sqlite3/2.1.11/sqlitepclraw.bundle_e_sqlite3.2.1.11.nupkg.sha512",
-    "/var/folders/5l/lhnp8gz53rg6yv82zzmlg4yr0000gn/T/cursor-sandbox-cache/3b4cfdc42b0b2ff5c1d9008ec62df4fd/nuget/sqlitepclraw.core/2.1.11/sqlitepclraw.core.2.1.11.nupkg.sha512",
-    "/var/folders/5l/lhnp8gz53rg6yv82zzmlg4yr0000gn/T/cursor-sandbox-cache/3b4cfdc42b0b2ff5c1d9008ec62df4fd/nuget/sqlitepclraw.lib.e_sqlite3/2.1.11/sqlitepclraw.lib.e_sqlite3.2.1.11.nupkg.sha512",
-    "/var/folders/5l/lhnp8gz53rg6yv82zzmlg4yr0000gn/T/cursor-sandbox-cache/3b4cfdc42b0b2ff5c1d9008ec62df4fd/nuget/sqlitepclraw.provider.e_sqlite3/2.1.11/sqlitepclraw.provider.e_sqlite3.2.1.11.nupkg.sha512"
+    "/Users/levihenstrom/.nuget/packages/microsoft.aspnetcore.openapi/10.0.1/microsoft.aspnetcore.openapi.10.0.1.nupkg.sha512",
+    "/Users/levihenstrom/.nuget/packages/microsoft.data.sqlite.core/10.0.5/microsoft.data.sqlite.core.10.0.5.nupkg.sha512",
+    "/Users/levihenstrom/.nuget/packages/microsoft.entityframeworkcore/10.0.5/microsoft.entityframeworkcore.10.0.5.nupkg.sha512",
+    "/Users/levihenstrom/.nuget/packages/microsoft.entityframeworkcore.abstractions/10.0.5/microsoft.entityframeworkcore.abstractions.10.0.5.nupkg.sha512",
+    "/Users/levihenstrom/.nuget/packages/microsoft.entityframeworkcore.analyzers/10.0.5/microsoft.entityframeworkcore.analyzers.10.0.5.nupkg.sha512",
+    "/Users/levihenstrom/.nuget/packages/microsoft.entityframeworkcore.relational/10.0.5/microsoft.entityframeworkcore.relational.10.0.5.nupkg.sha512",
+    "/Users/levihenstrom/.nuget/packages/microsoft.entityframeworkcore.sqlite/10.0.5/microsoft.entityframeworkcore.sqlite.10.0.5.nupkg.sha512",
+    "/Users/levihenstrom/.nuget/packages/microsoft.entityframeworkcore.sqlite.core/10.0.5/microsoft.entityframeworkcore.sqlite.core.10.0.5.nupkg.sha512",
+    "/Users/levihenstrom/.nuget/packages/microsoft.extensions.dependencymodel/10.0.5/microsoft.extensions.dependencymodel.10.0.5.nupkg.sha512",
+    "/Users/levihenstrom/.nuget/packages/microsoft.openapi/2.0.0/microsoft.openapi.2.0.0.nupkg.sha512",
+    "/Users/levihenstrom/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.1.11/sqlitepclraw.bundle_e_sqlite3.2.1.11.nupkg.sha512",
+    "/Users/levihenstrom/.nuget/packages/sqlitepclraw.core/2.1.11/sqlitepclraw.core.2.1.11.nupkg.sha512",
+    "/Users/levihenstrom/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.1.11/sqlitepclraw.lib.e_sqlite3.2.1.11.nupkg.sha512",
+    "/Users/levihenstrom/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.1.11/sqlitepclraw.provider.e_sqlite3.2.1.11.nupkg.sha512"
   ],
   "logs": []
 }
