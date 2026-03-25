@@ -5,3 +5,24 @@
 .welcome-band {
   width: 100%;
 }
+
+.welcome-band-inner {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border-radius: 0.75rem;
+  background: linear-gradient(180deg, #f8fbff 0%, #eef5ff 100%);
+  border: 1px solid #dce8ff;
+  box-shadow: 0 4px 14px rgba(31, 81, 255, 0.08);
+}
+
+.project-card {
+  max-width: 760px;
+  margin: 0 auto;
+  border-radius: 0.9rem;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+}
+
+.project-meta li {
+  margin-bottom: 0.3rem;
+}

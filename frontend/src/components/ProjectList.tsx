@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import { API_BASE_URL } from "./api";
-import type { Project } from "./types/Project";
-import "./App.css";
+import { API_BASE_URL } from "../api";
+import type { Project } from "../types/Project";
+import "../App.css";
+import { useNavigate } from "react-router-dom";
 
 function ProjectList({selectedCategories, onTotalItemsChange }: {selectedCategories: string[], onTotalItemsChange: (total: number) => void}) {
   const [projects, setProjects] = useState<Project[]>([]);
@@ -9,6 +10,7 @@ function ProjectList({selectedCategories, onTotalItemsChange }: {selectedCategor
   const [pageSize, setPageSize] = useState<number>(10);
   const [pageNum, setPageNum] = useState<number>(1);
   const [error, setError] = useState<string | null>(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setPageNum(1);
@@ -47,7 +49,7 @@ function ProjectList({selectedCategories, onTotalItemsChange }: {selectedCategor
 
   return (
     <>
-      <div className="container py-4">
+      <div className="py-4">
         <div className="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
           <div className="d-flex align-items-center gap-2">
             <label htmlFor="pageSizeSelect" className="fw-semibold">
@@ -72,13 +74,13 @@ function ProjectList({selectedCategories, onTotalItemsChange }: {selectedCategor
 
         {error ? <div className="alert alert-danger">{error}</div> : null}
 
-        <div className="row g-3">
+        <div className="row g-4">
           {projects.map((p) => (
-            <div className="col-12 col-md-6 col-xl-4" key={p.projectId}>
-              <div className="card h-100">
-                <div className="card-body">
+            <div className="col-12" key={p.projectId}>
+              <div className="card h-100 project-card">
+                <div className="card-body text-center">
                   <h2 className="card-title h5">{p.projectName}</h2>
-                  <ul className="list-unstyled small mb-0">
+                  <ul className="list-unstyled small mb-3 project-meta">
                     <li>
                       <strong>Type:</strong> {p.projectType ?? "N/A"}
                     </li>
@@ -97,6 +99,14 @@ function ProjectList({selectedCategories, onTotalItemsChange }: {selectedCategor
                       {p.projectFunctionalityStatus ?? "N/A"}
                     </li>
                   </ul>
+                  <button
+                    className="btn btn-success"
+                    onClick={() =>
+                      navigate(`/donate/${p.projectId}/${encodeURIComponent(p.projectName)}`)
+                    }
+                  >
+                    Add to Cart
+                  </button>
                 </div>
               </div>
             </div>

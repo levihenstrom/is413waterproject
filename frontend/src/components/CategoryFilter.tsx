@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { API_BASE_URL } from "./api";
+import { API_BASE_URL } from "../api";
 import "./CategoryFilter.css";
 
 function CategoryFilter({selectedCategories, onCheckboxChange}: {selectedCategories: string[], onCheckboxChange: (categories: string[]) => void}) {
