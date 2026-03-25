@@ -1,21 +1,28 @@
 import { useEffect, useState } from "react";
+import { API_BASE_URL } from "./api";
 import type { Project } from "./types/Project";
 import "./App.css";
 
-function ProjectList() {
+function ProjectList({selectedCategories, onTotalItemsChange }: {selectedCategories: string[], onTotalItemsChange: (total: number) => void}) {
   const [projects, setProjects] = useState<Project[]>([]);
-  const [totalItems, setTotalItems] = useState<number>(0);
   const [totalPages, setTotalPages] = useState<number>(0);
   const [pageSize, setPageSize] = useState<number>(10);
   const [pageNum, setPageNum] = useState<number>(1);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
+    setPageNum(1);
+  }, [selectedCategories]);
+
+  useEffect(() => {
     const fetchProjects = async (): Promise<void> => {
+
+      const categoryParams = selectedCategories.map((category) => `projectTypes=${encodeURIComponent(category)}`).join("&");
+
       try {
         setError(null);
         const response = await fetch(
-          `https://localhost:5000/Water/allprojects?pageHowMany=${pageSize}&pageNum=${pageNum}`,
+          `${API_BASE_URL}/Water/allprojects?pageHowMany=${pageSize}&pageNum=${pageNum}${selectedCategories.length > 0 ? `&${categoryParams}` : ""}`,
         );
 
         if (!response.ok) {
@@ -26,26 +33,22 @@ function ProjectList() {
           await response.json();
 
         setProjects(data.projects);
-        setTotalItems(data.totalNumProjects);
+        onTotalItemsChange?.(data.totalNumProjects);
         setTotalPages(Math.ceil(data.totalNumProjects / pageSize));
       } catch {
         setError(
-          "Could not load projects. Ensure backend is running on https://localhost:5000.",
+          `Could not load projects. Start the API (e.g. dotnet run in backend) so it listens on ${API_BASE_URL}.`,
         );
       }
     };
 
     void fetchProjects();
-  }, [pageSize, pageNum]);
+  }, [pageSize, pageNum, selectedCategories, onTotalItemsChange]);
 
   return (
     <>
       <div className="container py-4">
         <div className="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
-          <div>
-            <h1 className="h2 mb-1">Water Project Dashboard</h1>
-            <p className="text-muted mb-0">Total Projects: {totalItems}</p>
-          </div>
           <div className="d-flex align-items-center gap-2">
             <label htmlFor="pageSizeSelect" className="fw-semibold">
               Projects per page

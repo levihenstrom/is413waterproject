@@ -81,5 +81,6 @@ npm run build
 ## Notes
 
 - CORS is configured to allow `http://localhost:3000` in backend `Program.cs`.
-- API endpoint used by the frontend:
-  - `GET https://localhost:5000/Water/allprojects?pageHowMany=10&pageNum=1`
+- In **Development**, HTTPS redirection is turned off so `http://localhost:4000` is not redirected to `https://localhost:5000` (avoids `Failed to fetch` from the self-signed dev certificate).
+- The React app calls the API on **`http://localhost:4000`** by default (see `frontend/src/api.ts`). Example:
+  - `GET http://localhost:4000/Water/allprojects?pageHowMany=10&pageNum=1`
